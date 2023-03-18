@@ -15,11 +15,24 @@
   height: 0px;
 }
 
+.down {
+  animation: slideDown 0.3s ease-out;
+}
+
 @keyframes slideUp {
   from {
     height: 0%;
   }
   to {
     height: 50%;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    height: 50%;
+  }
+  to {
+    height: 0%;
   }
 }

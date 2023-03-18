@@ -8,7 +8,7 @@ export default function PreviewProduct() {
   }
 
   return (
-    <div className={classes.preview}>
+    <div className={classes.container}>
       PreviewProduct{' '}
       <div>
         <button onClick={navigateHandler}>To cart</button>
