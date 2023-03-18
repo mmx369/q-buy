@@ -1,0 +1,93 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  height: max-content;
+  width: 80%;
+  height: 38px;
+  color: white;
+  background-color: #242424;
+  border: 1px solid #242424;
+  border-radius: 20px;
+  outline: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn__plus_scan {
+  margin: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  height: 38px;
+  width: 90%;
+  color: white;
+  background-color: #1c1c1e;
+  border-radius: 30px;
+  outline: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn__plus_scan_sm {
+  margin: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  height: 54px;
+  width: 100%;
+  color: #f2f2f7;
+  background-color: black;
+  border-radius: 30px;
+  outline: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn__delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  height: 54px;
+  width: 90%;
+  color: #ff3b30;
+  background-color: rgba(255, 59, 48, 0.1);
+  border: 1px solid rgba(255, 59, 48, 0.1);
+  border-radius: 30px;
+  outline: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn__product {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  height: 54px;
+  width: 90%;
+  color: white;
+  background-color: #34c759;
+  border: 1px solid #34c759;
+  border-radius: 30px;
+  outline: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn_title {
+  display: flex;
+  font-weight: 600;
+}

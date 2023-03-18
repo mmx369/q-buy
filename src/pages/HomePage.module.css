@@ -1,12 +1,66 @@
 .container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    max-width: 100%;
-    /* background-image: url('../assets/QBuy.jpg'); */
-    background-color: yellow;
-    /* background-position: top center; */
-    /* background-repeat: no-repeat; */
-    /* background-size: contain; */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/QBuy.jpg');
+  background-color: white;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.flexGrowBlock {
+  flex-grow: 1;
+}
+
+.upperFooter {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  max-width: 414px;
+}
+
+.upperFooter_text {
+  width: 50%;
+  box-sizing: border-box;
+  color: #777778;
+  font-size: 12px;
+}
+
+.upperFooter_buy {
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.upperFooter_buy > span {
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  bottom: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 414px;
+}
+
+.footer_button {
+  text-align: center;
+}
+
+.footer_img {
+  text-align: center;
+}
+
+@media (max-height: 650px) {
+  .container {
+    background-image: url('../assets/QBuy_sm.jpg');
+  }
 }
