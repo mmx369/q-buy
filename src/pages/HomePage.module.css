@@ -1,0 +1,12 @@
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+    /* background-image: url('../assets/QBuy.jpg'); */
+    background-color: yellow;
+    /* background-position: top center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+}
