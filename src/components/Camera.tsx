@@ -1,8 +1,15 @@
 import { useState } from 'react'
 import Loader from './Loader'
+import PreviewProduct from './PreviewProduct'
 
 export default function Camera() {
   const [isLoading, setIsLoading] = useState(false)
+  const [isShowPreviewProduct, setIsShowPreviewProduct] = useState(false)
+
+  const previewHandler = () => {
+    setIsLoading(false)
+    setIsShowPreviewProduct(!isShowPreviewProduct)
+  }
 
   return (
     <div>
@@ -14,7 +21,9 @@ export default function Camera() {
         dolorum ipsum! Dicta, officia. Scanning
       </p>
       {isLoading && <Loader />}
+      {isShowPreviewProduct && !isLoading && <PreviewProduct />}
       <button onClick={() => setIsLoading(!isLoading)}>Open Loader</button>
+      <button onClick={previewHandler}>Open Preview</button>
     </div>
   )
 }
