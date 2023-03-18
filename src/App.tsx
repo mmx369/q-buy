@@ -1,12 +1,15 @@
 import { BrowserRouter as Router } from 'react-router-dom'
 import AnimatedRouts from './components/AnimatedRoutes'
+import { AppContextProvider } from './store/AppContextProvider'
 
 function App() {
   return (
     <>
-      <Router>
-        <AnimatedRouts />
-      </Router>
+      <AppContextProvider>
+        <Router>
+          <AnimatedRouts />
+        </Router>
+      </AppContextProvider>
     </>
   )
 }
