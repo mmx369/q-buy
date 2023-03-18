@@ -64,3 +64,9 @@
     background-image: url('../assets/QBuy_sm.jpg');
   }
 }
+
+@media screen and (orientation: landscape) {
+  .container {
+    min-height: 700px;
+  }
+}
