@@ -1,8 +1,7 @@
 .container {
   position: absolute;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   animation: slideUp 0.5s ease-out;
   animation-fill-mode: forwards;
   border-top-left-radius: 20px;
@@ -10,9 +9,70 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: green;
+  background-color: white;
   width: 100%;
   height: 0px;
+}
+
+.title {
+  padding: 3px 0px 12px 12px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.title__second {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0px 12px 12px;
+  margin: 0 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #aeaeb2;
+}
+
+.nutrition {
+  display: flex;
+  margin: 5px;
+  justify-content: space-between;
+}
+
+.nutrition__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #f2f2f7;
+}
+
+.nutrition__block > div {
+  font-size: 12px;
+  color: #777778;
+}
+
+.description {
+  margin: 15px;
+  font-size: 12px;
+  color: #777778;
+}
+
+.action {
+  display: flex;
+}
+
+.action__button {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.action__icon {
+  display: flex;
+  width: 20%;
 }
 
 @keyframes slideUp {
@@ -21,5 +81,16 @@
   }
   to {
     height: 50%;
+  }
+}
+
+@media (max-height: 650px) {
+  @keyframes slideUp {
+    from {
+      height: 0%;
+    }
+    to {
+      height: 60%;
+    }
   }
 }

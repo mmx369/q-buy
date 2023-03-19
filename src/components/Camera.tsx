@@ -225,7 +225,9 @@ export default function Camera() {
         </div>
       )}
       {isLoading && <Loader />}
-      {isShowPreviewProduct && !isLoading && <PreviewProduct />}
+      {isShowPreviewProduct && !isLoading && (
+        <PreviewProduct setIsShowPreviewProduct={setIsShowPreviewProduct} />
+      )}
     </div>
   )
 }
