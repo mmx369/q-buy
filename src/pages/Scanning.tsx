@@ -14,7 +14,6 @@ export default function Scanning() {
       transition={{ duration: 0.75, ease: 'easeOut' }}
     >
       <Camera />
-      <button onClick={() => navigate('/cart')}>To Cart</button>
     </motion.div>
   )
 }
